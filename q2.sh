@@ -1,23 +1,11 @@
 #!/bin/bash
-echo "enter first mark"
+echo "enter the  number"
 read a
-echo "enter the second mark"
-read b
-echo "enter third mark"
-read c
-sum=$(expr $a + $b + $c)
-echo "total mark is $sum"
-avrg=$((sum/3))
-echo "avrg is $avrg"
-if [ $sum -gt 90 ];
+if [ $((a % 2)) == 0 ]
 then
-echo "outstanding"
-elif [ $sum -gt 80 ];
-then
-echo "good"
-elif [ $sum -gt 70 ]
-then
-echo "avarage"
+echo "even"
 else
-echo "fail"
+echo "odd"
 fi
+
+
