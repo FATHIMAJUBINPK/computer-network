@@ -10,7 +10,7 @@ then
 fi
 if [ -d $1 ]
 then
-        echo " $1 is a dictionary"
+        echo " $1 is a directory"
         exit 2
 fi
 cp $1 file
@@ -52,7 +52,7 @@ sh reverse.sh file1.txt
 
 
 Output:
-vi file1.txt
+vi file1.txt.rev
 ----------------------file1.txt.rev--------------------
 This is the second line
 This is the first line
